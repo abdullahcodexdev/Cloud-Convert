@@ -1,0 +1,45 @@
+<svg width="512" height="512" viewBox="0 0 512 512" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="bg" x1="64" y1="56" x2="448" y2="456" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#F8FBFF"/>
+      <stop offset="1" stop-color="#EEF2FF"/>
+    </linearGradient>
+    <linearGradient id="strokeA" x1="104" y1="104" x2="332" y2="282" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#4FB3FF"/>
+      <stop offset="0.52" stop-color="#264DCC"/>
+      <stop offset="1" stop-color="#1C2D8F"/>
+    </linearGradient>
+    <linearGradient id="strokeB" x1="230" y1="226" x2="416" y2="408" gradientUnits="userSpaceOnUse">
+      <stop stop-color="#293CBA"/>
+      <stop offset="0.58" stop-color="#4A2DE2"/>
+      <stop offset="1" stop-color="#8D2BFF"/>
+    </linearGradient>
+    <filter id="cardShadow" x="20" y="20" width="472" height="472" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="20" stdDeviation="22" flood-color="#6B7BA8" flood-opacity="0.18"/>
+    </filter>
+    <filter id="glowA" x="55" y="55" width="292" height="302" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="10" stdDeviation="10" flood-color="#4A74FF" flood-opacity="0.38"/>
+    </filter>
+    <filter id="glowB" x="161" y="158" width="296" height="299" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
+      <feDropShadow dx="0" dy="10" stdDeviation="12" flood-color="#8D2BFF" flood-opacity="0.35"/>
+    </filter>
+  </defs>
+
+  <g filter="url(#cardShadow)">
+    <rect x="48" y="48" width="416" height="416" rx="72" fill="url(#bg)"/>
+    <rect x="48.75" y="48.75" width="414.5" height="414.5" rx="71.25" stroke="#D6E0F5" stroke-opacity="0.9" stroke-width="1.5"/>
+  </g>
+
+  <g filter="url(#glowA)">
+    <path d="M185 102C140 129 109 178 104 233C100 282 120 331 157 370L197 347C166 314 150 273 153 232C157 198 177 165 206 144L185 102Z" fill="url(#strokeA)"/>
+    <path d="M184 90L263 143L185 190L184 90Z" fill="url(#strokeA)"/>
+    <path d="M198 115C198 110 201 106 206 106H225C271 106 314 124 347 156L313 184C288 160 257 147 223 147H206C201 147 198 143 198 138V115Z" fill="url(#strokeA)"/>
+  </g>
+
+  <g filter="url(#glowB)">
+    <path d="M336 103C381 128 411 177 415 231C419 284 397 336 358 375L319 351C351 318 367 276 364 233C361 200 342 167 313 146L336 103Z" fill="url(#strokeB)"/>
+    <path d="M327 420L249 366L327 319L327 420Z" fill="url(#strokeB)"/>
+    <path d="M315 397C315 402 311 406 306 406H288C241 406 198 388 165 355L199 326C224 351 256 365 290 365H306C311 365 315 369 315 374V397Z" fill="url(#strokeB)"/>
+    <path d="M248 193C280 193 308 203 331 223C354 243 365 270 365 304C365 307 365 311 364 315L318 309C319 307 319 305 319 302C319 282 313 266 300 253C288 240 271 234 250 234C233 234 219 238 207 246L224 267L160 282L145 220L171 243C191 210 217 193 248 193Z" fill="url(#strokeB)"/>
+  </g>
+</svg>

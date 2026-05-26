@@ -1,0 +1,30 @@
+{
+    "name": "fluxconvert/laravel-cloudconvert",
+    "type": "project",
+    "description": "Laravel port of the FluxConvert file conversion website.",
+    "require": {
+        "php": "^8.2",
+        "laravel/framework": "^11.0",
+        "phpoffice/phpword": "^1.2",
+        "phpoffice/phpspreadsheet": "^2.1",
+        "dompdf/dompdf": "^3.0",
+        "laravel/socialite": "^5.26",
+        "socialiteproviders/microsoft": "^4.9",
+        "smalot/pdfparser": "^2.12",
+        "setasign/fpdi": "^2.6",
+        "setasign/fpdf": "^1.8"
+    },
+    "autoload": {
+        "psr-4": {
+            "App\\": "app/"
+        }
+    },
+    "scripts": {
+        "post-autoload-dump": [
+            "Illuminate\\Foundation\\ComposerScripts::postAutoloadDump",
+            "@php artisan package:discover --ansi"
+        ]
+    },
+    "minimum-stability": "stable",
+    "prefer-stable": true
+}

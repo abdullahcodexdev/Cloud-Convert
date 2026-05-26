@@ -1,0 +1,54 @@
+# Dependencies (reinstall with composer install)
+/vendor
+/node_modules
+
+# Environment & secrets — never commit
+.env
+.env.backup
+.env.production
+auth.json
+
+# Laravel runtime
+/storage/*.key
+/storage/pail
+/bootstrap/cache/*.php
+
+# Logs & framework caches
+/storage/logs/*
+!/storage/logs/.gitkeep
+/storage/framework/cache/data/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+/storage/framework/testing/*
+
+# User data (kept out of source control)
+/storage/app/conversion-history.json
+/storage/app/user-accounts.json
+
+# Stray local test artifacts
+/storage/app/*.pdf
+/storage/app/*.php
+/storage/app/*.txt
+/storage/app/*.xls
+/storage/app/*.xlsx
+/storage/app/*.csv
+/storage/app/*.docx
+
+# Generated / uploaded files (keep the folders, drop the contents)
+/storage/app/uploads/*
+!/storage/app/uploads/.gitkeep
+/storage/app/converted/*
+!/storage/app/converted/.gitkeep
+/storage/app/private/*
+/storage/app/public/*
+/public/converted-downloads/*
+!/public/converted-downloads/.gitkeep
+/public/profile-avatars/*
+/test-results/*
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea
+.vscode
+*.swp
